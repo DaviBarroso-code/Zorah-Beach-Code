@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    html,
+    body{
+        height: 100vh;
+    }
+
+    body{
+        background-color: #009CF7;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    img{
+        width: 120px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    h1{
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin: 20px 0;
+        color: white;
+
+    }
+
+   
+
+    form{
+        margin: 20px 0;
+        background-color: white;
+        padding: 30px 25px;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 980px;
+    }
+
+    form .input-block{
+        margin-bottom: 14px;
+    }
+
+    form .input-block label{
+        
+        font-size: 14px;
+        color: #009CF7;
+        margin-left: 10px;
+    }
+
+    form .input-block input{
+        display: flex;
+        width: 100%;
+        margin-top: 8px;
+        padding: 7px;
+        font-size: 16px;
+        color: #009CF7;
+        border-radius: 2px;
+        border: 1px solid #ccddef;
+        outline-color: #3CB371;
+        
+    }
+
+    form #cad-email{
+        width: 380px;
+    }
+
+    form #cad-password{
+        width: 380px;
+    }
+
+    form #cad-cpf{
+        width: 200px;
+    }
+
+    form #cad-data{
+        width: 100%;
+    }
+
+    form .btn-login{
+        display: flex;
+        min-width: 120px;
+        width: 60%;
+        border: none;
+        background-color: #FCC246;
+        color: white;
+        border-radius: 25px;
+        margin: auto;
+        padding:7px 7px;
+        
+    }
+
+    @media(max-width:425px){
+        form #cad-email{
+            width: 330px;
+        }
+    
+        form #cad-password{
+            width: 330px;
+        }
+
+        form #cad-cpf{
+            width: 100%;
+        }
+    }
+
+    @media(max-width: 375px){
+
+        form #cad-email{
+            width: 280px;
+        }
+    
+        form #cad-password{
+            width: 280px;
+        }
+
+        form .btn-login{
+            width: 280px;
+        }
+
+    }
+
+    .input span.error{
+        display: flex;
+        padding: 0;
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+
+    .input span.error.active{
+        border: 1px, solid red;
+        padding: 0.4em;
+    }
+
+    form {
+        overflow: hidden;
+        animation: fade 0.5s;
+      }
+    
+    img {
+        overflow: hidden;
+        animation: fade 0.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .form-hide {
+        animation: down 1.2s forwards;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      
+      @keyframes down {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(100vh);
+        }
+      }
+      .cad{
+          text-align: center;
+      }
